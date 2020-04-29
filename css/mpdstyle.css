@@ -1,24 +1,33 @@
 * {
     box-sizing: border-box;
   }
-.row {
-    width: 100%;
-    
-  }
 
-  menu {
-    border: 2px solid black;
-    background-color: rgba(190, 179, 179, 0.856);
-    height: 150px;
-    margin-right: 10px;
-    margin-left: 10px;
+  body {
     font-family: Helvetica;
-   
+    display:block;
+
+  }
+  .page_title{
+      font-size: 150%;
+      text-align: center;
+  }
+  /*
+  .menu_box {
+    border: 2px solid black;
+    width:100%
+  }
+  */
+  .menu{
+    position: relative;
+    border: black solid 2px; 
+    background-color: rgba(190, 179, 179, 0.856);
+    margin: 20px;
   }
 
-  menu_title{
-    background-color: rgb(42, 44, 165);
-    float: right;
+  .menu_title{
+    /*float: right;*/
+    position: absolute;
+    right: 0px;
     width:33%;
     text-align: center;
     border: black solid 2px;
@@ -27,9 +36,12 @@
     margin-top: -2px;
     margin-right: -2px;
   }
-  menu_content{
-    margin: 10px;
-    float: right;
+
+  .menu_content{
+    margin-top: 40px;
+    padding: 10px;
+    /*border: springgreen solid 1px;*/
+    
 }
 #menu1_title{
     background-color: rosybrown;
@@ -40,6 +52,7 @@
 #menu3_title{
     background-color: rgb(82, 224, 77);
 }
+
 /********** Large devices only **********/
 
 @media (min-width: 992px) {
